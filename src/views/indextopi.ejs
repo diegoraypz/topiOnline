@@ -5,7 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ropa mujer</title>
+    <!---
+    <link rel="stylesheet" href="topi.css">-->
     <% include partials/head %>
+    <style>
+        body, html {
+        height: 100%;
+        }
+
+        .bg { 
+        /* The image used */
+        background-image: url("img/modaIndex.jpeg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        
+    </style>
 </head>
 <body>
     <header>
@@ -29,22 +50,22 @@
                 </div>
               </nav>
     </header>
-
+    <div class="bg">
     <div class="container">
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white">
-                <a class="navbar-brand" href="/indextopi"><h1>TOPI Online</h1></a>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color:transparent">
+                <a class="navbar-brand" href="#" style="color:white"><h1>TOPI Online</h1></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/mujer" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="/mujer" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white">
                                 Mujer
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Ropa Deportiva</a>
+                                <a class="dropdown-item" href="/mujer">Ropa Deportiva</a>
                                 <a class="dropdown-item" href="#">Blusas</a>
                                 <a class="dropdown-item" href="#">Vestidos</a>
                                 <div class="dropdown-divider"></div>
@@ -52,7 +73,7 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white">
                                 Hombre
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -66,76 +87,11 @@
                     </ul>
                 </div>
             </nav>
-        </div>
-
-        
-        
-        <div class="container-fluid" style="background-color: rgb(143, 139, 139)">
-            <p style="color:rgb(143, 139, 139)">.</p>
-        </div>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <h3>MUJER</h3>
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <ul class="navbar-nav flex-column navbar-light">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/mujer"><strong>Ropa Deportiva</strong></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#"><strong>Blusas</strong></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#"><strong>Vestidos</strong></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="#"><strong>Descuentos</strong></a>
-                                </li>
-                            </ul>
-                    </nav>
-                </div>
-                <div class="col-9 row">
-                    <div class="card col-4">
-                        <img class="card-img-top" src="img/rdm001.jpg" alt="rdm001">
-                        <div>
-                            <a href="/rdm001">
-                                <div style="color:rgb(143, 139, 139); text-align: center">Pantalón Leggin Mujer Leg Negro</div>
-                            </a>
-                            <div style="text-align: center">
-                                <p>S/.59.90</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card col-4">
-                        <img class="card-img-top" src="img/rdm002.jpg" alt="rdm002">
-                        <div>                            
-                            <a href="#">
-                                <div style="color:rgb(143, 139, 139); text-align: center">Polo Manga Corta Mujer Niu Blanco</div>
-                            </a>
-                            <div style="text-align: center">
-                                    <p>S/.35.90</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card col-4">
-                        <img class="card-img-top" src="img/rdm003.jpg" alt="rdm003">
-                        <div>                            
-                            <a href="#">
-                                <div style="color:rgb(143, 139, 139); text-align: center">Polo Manga Corta Mujer Niu Negro</div>
-                            </a>
-                            <div style="text-align: center">
-                                    <p>S/.35.90</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-
+        </div>  
+    </div>
 
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -39,9 +39,18 @@ module.exports = (app, passport) => {
         res.redirect('/');
     });
 
+    app.get('/indextopi', (req, res) => {
+        res.render('indextopi');
+    });
+
     app.get('/mujer', (req, res) => {
         res.render('mujer');
     });
+
+    app.get('/rdm001', (req, res) => {
+        res.render('ropadetalle');
+    });
+    
     
 
     function isLoggedIn(req, res, next){
