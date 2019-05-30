@@ -39,6 +39,11 @@ module.exports = (app, passport) => {
         res.redirect('/');
     });
 
+    app.get('/mujer', (req, res) => {
+        res.render('mujer');
+    });
+    
+
     function isLoggedIn(req, res, next){
         if(req.isAuthenticated()){
             return next();
